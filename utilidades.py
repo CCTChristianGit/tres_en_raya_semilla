@@ -8,8 +8,9 @@ def comprobar_ganador(x, y, tablero):
     # Miramos hacia la izquierda y derecha
     victoria_lateral = True
 
-    # TODO: comprobacion
-    pass
+    for fila in tablero:
+        for col in fila:
+            if 
     
     if victoria_lateral:
         return True
@@ -39,7 +40,19 @@ def mostrar_tablero(tablero):
 # - --> 0
 def convertir_tablero(tablero):
     nuevo_tablero = []
+    for i in tablero:
+        lista_aux = []
+        for j in i:
+            if j == "X":
+                lista_aux.append(1)
+            elif j == "O":
+                lista_aux.append(-1)
+            else:
+                lista_aux.append(0)
 
+        nuevo_tablero.append(lista_aux)
+
+    return(nuevo_tablero)
     ##########################################
     #TODO: Convertirlo a una lista de listas
     # ej: [[1,1,0], [1,-1,-1], [0, 0, 0]]
