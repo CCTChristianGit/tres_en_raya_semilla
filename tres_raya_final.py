@@ -20,7 +20,9 @@ tablero_cutre = [linea1, linea2, linea3]
 # tablero = [ [1, -1, 0], [0, -1, 0], [1, -1, 1] ]
 
 tablero = utilidades.convertir_tablero(tablero_cutre)
+print("\nTABLERO")
 utilidades.mostrar_tablero(tablero)
+print()
 
 ##########################
 # 3 - COMPROBAR GANADOR
