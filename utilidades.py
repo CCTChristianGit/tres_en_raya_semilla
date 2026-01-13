@@ -2,8 +2,7 @@ def comprobar_ganador(x, y, tablero):
 
     # ¿Qué casilla tenemos que comprobar?
     jugador = tablero[x][y]
-    print("Voy a comprobar ", jugador, "(jugador) en:\nColumna:", x, ", Fila:", y)
-    print()
+    print("Voy a comprobar ", jugador, "(jugador) en:\nColumna:", x, ", Fila:", y) 
 
     ##########################################
     # Miramos hacia la izquierda y derecha
@@ -15,6 +14,8 @@ def comprobar_ganador(x, y, tablero):
     
     if victoria_lateral:
         return f"Victoria en la Fila {x}"
+    
+
     ##########################################
     # Miramos hacia abajo
     victoria_columna = True
@@ -25,6 +26,8 @@ def comprobar_ganador(x, y, tablero):
 
     if victoria_columna:
         return f"Victoria en la Columna {y}"
+    
+
     ##########################################
     # Diagonal
 
@@ -47,6 +50,8 @@ def mostrar_tablero(tablero):
 # X --> 1
 # O --> -1
 # - --> 0
+
+
 def convertir_tablero(tablero):
     nuevo_tablero = []
     for i in tablero:
