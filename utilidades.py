@@ -51,7 +51,6 @@ def mostrar_tablero(tablero):
 # O --> -1
 # - --> 0
 
-
 def convertir_tablero(tablero):
     nuevo_tablero = []
     for i in tablero:
